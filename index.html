@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Delifrio 2.0</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Estoque Delifrio 2.0</h1>
+  <div id="controle-estoque" class="section">
+    <h2>Controle de estoque</h2>
+    <div class="autocomplete-wrapper">
+      <input type="text" id="produto-pesquisa" placeholder="Digite o produto" autocomplete="off">
+      <div id="sugestoes"></div>
+    </div>
+    <input type="number" id="quantidade" placeholder="Quantidade" min="1">
+    <button onclick="adicionarProduto()">Adicionar</button>
+    <button onclick="removerProduto()">Remover</button>
+    <p id="mensagem"></p>
+    <button onclick="compartilharPDF()">Compartilhar Estoque</button>
+  </div>
+  <div id="refri" class="section">
+    <h2>Refrigerantes</h2>
+    <p id="Coca-Cola-1-litro">Coca-Cola 1 litro: 10</p>
+    <p id="Coca-Cola-lata">Coca-Cola lata: 20</p>
+    <p id="Coca-Cola-Zero-lata">Coca-Cola Zero lata: 15</p>
+    <p id="Coca-Cola-500ml">Coca-Cola 500ml: 12</p>
+    <p id="Coca-Cola-500ml-Zero">Coca-Cola 500ml Zero: 10</p>
+    <p id="Guarana-lata">Guarana lata: 18</p>
+    <p id="Guarana-Zero-lata">Guarana Zero lata: 15</p>
+    <p id="Guarana-1-litro">Guarana 1 litro: 12</p>
+    <p id="Fanta-lata">Fanta lata: 12</p>
+    <p id="Fanta-1-litro">Fanta 1 litro: 10</p>
+    <p id="Sprite-lata">Sprite lata: 10</p>
+
+    <div id="outras-bebidas" class="section">
+      <h2>Outras Bebidas</h2>
+      <p id="H2O-limonete">H2O limonete: 10</p>
+      <p id="H2O">H2O: 15</p>
+      <p id="Agua-mineral">Agua mineral: 20</p>
+      <p id="Agua-com-gas">Agua com gas: 12</p>
+    </div>
+  </div>
+
+  <div id="doces" class="section">
+    <h2>Doces</h2>
+    <!-- Bolos no pote -->
+    <p id="Bolo-no-pote-napolitano">Bolo no pote napolitano: 10</p>
+    <p id="Bolo-no-pote-bem-casado">Bolo no pote bem-casado: 10</p>
+    <p id="Bolo-no-pote-chocolate">Bolo no pote chocolate: 10</p>
+    <!-- Fatia de torta -->
+    <p id="Fatia-de-torta-chocolate">Fatia de torta chocolate: 10</p>
+    <p id="Fatia-de-torta-bem-casado">Fatia de torta bem-casado: 10</p>
+    <p id="Fatia-de-torta-red-velvet">Fatia de torta Red Velvet: 10</p>
+    <p id="Fatia-de-torta-ninho-nutella">Fatia de torta ninho com Nutella: 10</p>
+    <!-- Copo da felicidade -->
+    <p id="Copo-da-felicidade-ninho-nutella">Copo da felicidade ninho com Nutella: 10</p>
+    <p id="Copo-da-felicidade-chocolate">Copo da felicidade chocolate: 10</p>
+    <p id="Copo-da-felicidade-bem-casado">Copo da felicidade bem-casado: 10</p>
+    <!-- Outros doces -->
+    <p id="Tortilete">Tortilete: 10</p>
+    <p id="Base-de-brownie">Base de brownie: 10</p>
+  </div>
+
+  <div id="salgados" class="section">
+    <h2>Salgados</h2>
+    <p id="Croissant">Croissant: 10</p>
+    <p id="Empanada-de-frango">Empanada de frango: 10</p>
+    <p id="Empanada-de-queijo">Empanada de queijo: 10</p>
+    <p id="Empada-de-camarao">Empada de camarao: 10</p>
+    <p id="Empada-de-frango">Empada de frango: 10</p>
+    <p id="Coxinha-de-frango">Coxinha de frango: 10</p>
+    <p id="Coxinha-de-camarao">Coxinha de camarao: 10</p>
+    <p id="Coxinha-de-frango-requeijao">Coxinha de frango com requeijao: 10</p>
+    <p id="Empadao-de-frango">Empadao de frango: 10</p>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

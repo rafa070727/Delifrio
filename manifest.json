@@ -1,0 +1,21 @@
+{
+  "name": "Delifrio 2.0",
+  "short_name": "Delifrio",
+  "description": "Controle de estoque Delifrio 2.0",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f8f8f8",
+  "theme_color": "#333333",
+  "icons": [
+    {
+      "src": "icons/Delifrio2.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Delifrio2.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

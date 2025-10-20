@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: purple;
+  padding: 20px;
+}
+h1 {
+  text-align: center;
+  color: #fff;
+  background-color: ;
+}
+
+.section {
+  border: 2px solid #000;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.section h2 {
+  background-color: gray;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.section p {
+  margin: 5px 0;
+}
+
+#controle-estoque input {
+  padding: 5px;
+  margin-right: 5px;
+}
+
+#controle-estoque button {
+  padding: 5px 10px;
+  margin-top: 5px;
+}
+
+#mensagem {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#sugestoes {
+  border: 1px solid #ccc;
+  max-height: 150px;
+  overflow-y: auto;
+  position: absolute;
+  background: #fff;
+  width: 200px;
+  z-index: 1000;
+}
+
+#sugestoes div:hover {
+  background-color: #eee;
+}
+
+.autocomplete-wrapper {
+  position: relative;
+  display: inline-block;
+}
