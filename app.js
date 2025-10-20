@@ -21,6 +21,7 @@ let estoque = JSON.parse(localStorage.getItem('estoque')) || {
   "Fatia de torta chocolate": 10,
   "Fatia de torta bem-casado": 10,
   "Fatia de torta Red Velvet": 10,
+  "Tortas sabores diferentes": 10, // quantidade inicial
   "Fatia de torta ninho com Nutella": 10,
   "Copo da felicidade ninho com Nutella": 10,
   "Copo da felicidade chocolate": 10,
